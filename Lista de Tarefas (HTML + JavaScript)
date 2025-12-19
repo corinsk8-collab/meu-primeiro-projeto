@@ -1,0 +1,12 @@
+<input type="text" id="tarefa" placeholder="Digite uma tarefa">
+<button onclick="adicionar()">Adicionar</button>
+<ul id="lista"></ul>
+
+<script>
+function adicionar() {
+  let tarefa = document.getElementById("tarefa").value;
+  let li = document.createElement("li");
+  li.textContent = tarefa;
+  document.getElementById("lista").appendChild(li);
+}
+</script>
