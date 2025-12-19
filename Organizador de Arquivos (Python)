@@ -1,0 +1,6 @@
+import os, shutil
+
+pasta = "arquivos"
+for arquivo in os.listdir(pasta):
+    if arquivo.endswith(".pdf"):
+        shutil.move(os.path.join(pasta, arquivo), "PDFs/" + arquivo)
